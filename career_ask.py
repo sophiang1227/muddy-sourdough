@@ -7,15 +7,11 @@ Original file is located at
     https://colab.research.google.com/drive/1W0EOc4vvLP0up_6f8tA-gCE4G963chGE
 """
 
-import streamlit as st
-import os
-import sys
-import openai
-from langchain.embeddings import OpenAIEmbeddings
-from langchain.memory import ConversationBufferMemory
-from langchain.llms import OpenAI
-from langchain.chains import ConversationChain
-from langchain.prompts import PromptTemplate
+# Page title
+st.set_page_config(page_title='🦜🔗 Career Ask')
+st.title('🦜🔗 Career Ask')
+
+streamlit run career_ask.py
 
 from google.colab import files
 uploaded = files.upload()
@@ -127,7 +123,4 @@ if bg:
 else:
     st.info("Please enter your family and education background to start the interview.")
 
-# Page title
-st.set_page_config(page_title='🦜🔗 Career Ask')
-st.title('🦜🔗 Career Ask')
 
