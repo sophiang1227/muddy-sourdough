@@ -11,6 +11,8 @@ Original file is located at
 st.set_page_config(page_title='🦜🔗 Career Ask')
 st.title('🦜🔗 Career Ask')
 
+import streamlit as st
+
 streamlit run career_ask.py
 
 from google.colab import files
